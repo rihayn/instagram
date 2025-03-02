@@ -1,8 +1,12 @@
+import PostCard from "./postCard";
 
 export default function Home() {
     return (
         <section>
-            <h1>Feed</h1>
+            <PostCard/>
+            <PostCard/>
+            <PostCard/>
+
         </section>
 
     )
