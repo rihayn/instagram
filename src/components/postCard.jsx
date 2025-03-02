@@ -1,10 +1,10 @@
 import propic from "../assets/propic.svg";
-import auth from "../assets/Frame.svg";
+import auth from "../assets/Frame1.svg";
 import post from "../assets/Auto Layout Horizontal.svg";
 import like from "../assets/like.svg";
 import save from "../assets/save.svg";
 import comment from "../assets/comment.svg";
-import emoji from "../assets/emoji.svg";
+import emoji from "../assets/emoji.svg"
 export default function PostCard() {
   return (
     <section className="flex justify-center items-center">
@@ -41,15 +41,9 @@ export default function PostCard() {
         <span className="text-[#262626] text-xs font-bold block my-2 ">
           See translation
         </span>
-        <a className="text-[#8E8E8E] text-sm  pb-2 block">
-          View all 13,384 comments
-        </a>
+        <a className="text-[#8E8E8E] text-sm  pb-2 block">View all 13,384 comments</a>
         <div className="flex items-center justify-between pb-5 border-b-1 border-[#DBDBDB] mb-2 ">
-          <input
-            type="text"
-            placeholder="Add a comment…"
-            className="placeholder:text-[#262626] text-sm font-semibold"
-          />
+          <input type="text" placeholder="Add a comment…"  className="placeholder:text-[#262626] text-sm font-semibold"/>
           <img src={emoji} alt="emoji" />
         </div>
       </div>
