@@ -6,8 +6,10 @@ import * as yup from "yup";
 import { client } from "../../../lib/axios";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
+  const navigate = useNavigate();
   const schema = yup.object({
     username: yup.string().required(),
     email: yup.string().email().required(),
@@ -34,6 +36,10 @@ export default function SignUp() {
       toast.success("user added successfully", {
         type: "success",
       });
+      console.log(response)
+      if (response) {
+        navigate("/feed/profile");
+      }
     } catch (error) {
       toast.error(error, {
         type: "error",
