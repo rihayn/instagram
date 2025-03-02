@@ -45,7 +45,7 @@ async function PostApiRegister(user) {
       const response = await client.post("/user/login", user);
       localStorage.setItem("token", response.data.jwt);
       toast.success("Login successful", { type: "success" });
-      console.log("log in")
+      console.log(response)
     } catch (error) {
       console.error(error);
       toast.error("Login failed", { type: "error" });
