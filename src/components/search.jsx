@@ -55,7 +55,7 @@ export default function SearchBox() {
     };
 
     return (
-        <div className="absolute left-22 p-5 w-l shadow-md rounded-r-xl bg-white">
+        <div className="absolute left-18 p-5 w-l shadow-md rounded-r-xl bg-white">
             <div className="border-b border-[#DBDBDB]">
                 <h1 className="text-black font-bold">Search</h1>
                 <label className="input bg-[#EFEFEF] my-3">
