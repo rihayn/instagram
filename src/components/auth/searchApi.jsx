@@ -8,7 +8,7 @@ const searchUSers = () => {
             setloading(true);
             setHasSearch(true);
             const response = (
-                axios.get(`user/searchUser?search=${FormData}&limit=5'`)
+                axios.get(`user/searchUser?search=${FormData}&limit=5`)
             ).data;
             setUsers(response.users);
             
