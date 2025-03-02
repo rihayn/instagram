@@ -29,7 +29,8 @@ export default function Login() {
   async function PostApiRegister(user) {
     try {
       const response = await client.post("/user/login", user);
-      localStorage.setItem("token", response.data.jwt);
+      localStorage.setItem("token", response.data.accessToken);
+      localStorage.setItem("username", response.data.data.username);
       toast.success("Login successful", { type: "success" });
       console.log(response);
       if (response) {

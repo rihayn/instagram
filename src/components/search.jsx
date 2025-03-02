@@ -86,7 +86,7 @@ export default function SearchBox() {
                         >
                             <div className="flex items-center space-x-3">
                                 <img
-                                    src={user.profilePicture || ProfileAvatar}
+                                    src={ProfileAvatar}
                                     alt="user avatar"
                                     className="w-8 h-8 rounded-full"
                                 />
@@ -94,7 +94,7 @@ export default function SearchBox() {
                                     <h4 className="text-black font-medium">{user.username}</h4>
                                 </div>
                             </div>
-                            <button onClick={() => removeRecentSearch(user.username)} className="text-black">
+                            <button onClick={() => removeRecentSearch(user.username)} className="text-gray-600 font-semibold cursor-pointer">
                                 X
                             </button>
                         </div>
@@ -115,13 +115,17 @@ export default function SearchBox() {
                                 className="flex justify-between items-center p-2 cursor-pointer hover:bg-gray-200 rounded-md"
                                 onClick={() => handleSelectUser(user)}
                             >
-                                <div className="flex items-center space-x-3">
+                                <div className="flex items-center justify-between w-full">
+                                    <div className="flex items-center space-x-3">
                                     <img
-                                        src={user.profilePicture || ProfileAvatar}
+                                        src={ProfileAvatar}
                                         alt="user avatar"
                                         className="w-8 h-8 rounded-full"
                                     />
                                     <span className="text-black">{user.username}</span>
+                                    </div>
+                                    
+                                    <span className="bg-[#0095F6] px-3 py-1 rounded-xl font-semibold hover:bg-blue-800">Follow</span>
                                 </div>
                             </div>
                         ))
