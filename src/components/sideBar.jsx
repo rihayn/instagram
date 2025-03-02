@@ -28,7 +28,7 @@ export default function SideBar() {
     };
 
     return (
-        <div className="flex">
+        <div className="flex fixed">
             <div className={`bg-white h-screen border-r-2 border-[#DBDBDB] py-4 ${menuWidth} flex flex-col gap-4`}>
                 <img src={logo} alt="Instagram" className="h-[29px]" />
                 <nav>
